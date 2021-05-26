@@ -7,6 +7,7 @@ def index():
     def do_some_work():
         # do some work here, it can access flask.request or
         # flask.session like you would otherwise in the view function.
+        return "hi"
         ...
     gevent.spawn(do_some_work)
     return 'Regular response
